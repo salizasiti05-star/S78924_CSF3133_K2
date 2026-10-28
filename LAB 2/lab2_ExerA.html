@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale-1.0">
+        <title>Faculty event page</title>
+    </head>
+    <body>
+        <!---Section 1:Event Name and a short tagline-->
+        <header>
+            <h1>Programming Workshop</h1>
+            <p>Learn Coding, Build Your Future!</p>
+            <p>Date:12 December 2026</p>
+        </header>
+
+        <!---Section 2:Navigation-->
+        <nav>
+            <a href="#about">About the Event</a>
+            <a href="#schedule">Event Schedule</a>
+            <a href="#register">Register</a>
+        </nav>
+        <hr>
+        <!--Section 3:About Section : Information about the event-->
+        <section id="about">
+            <h2>About the event</h2>
+
+            <!--Article 1: Speaker information-->
+            <h3>Speaker 1:Dr. Hafizah Ahmad</h3>
+            <p>
+                Dr. Hafizah Ahmad will introduce students about progamming fundamentals and explain the importance of coding especially by using Java skill in the technology industry.
+            </p>
+        </article>
+             <!--Articel 2: Activity informatiom-->
+             <article>
+                <h3>Activity:Coding Challenge</h3>
+             <p>
+                Students will participate in a coding challenge to practice problem-solving skill and learn how to write simple computer programs.
+             </p>
+             </article>
+             </section>
+             <hr>
+              <!-- 4. Schedule Section: Event schedule table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+
+        <table border="1">
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+
+            <tr>
+                <td>8:00 AM - 9:00 AM</td>
+                <td>Registration</td>
+                <td>Hall A</td>
+                <td>Dr. Amir Ahnaf</td>
+            </tr>
+
+            <tr>
+                <td>9:00 AM - 10:00 AM</td>
+                <td>Opening Speech</td>
+                <td rowspan="2">Hall A</td>
+                <td>Dr. Siti Saleha</td>
+            </tr>
+
+            <tr>
+                <td>10:00 AM- 12:00 PM</td>
+                <td>Programming Talk</td>
+                <td>Dr. Nicholas Wang</td>
+            </tr>
+
+            <tr>
+                <td>12:00 PM</td>
+                <td colspan="3">Lunch Break</td>
+            </tr>
+
+            <tr>
+                <td>1:00 PM -2:30 PM</td>
+                <td>HTML Workshop</td>
+                <td>Computer Lab 1</td>
+                <td>Dr. Nurul</td>
+            </tr>
+
+            <tr>
+                <td>2:30 PM -4:00 PM</td>
+                <td>Java Workshop</td>
+                <td>Computer Lab 2</td>
+                <td>Dr. Jannah</td>
+            </tr>
+
+            <tr>
+                <td>4:00 PM</td>
+                <td>Coding Challenge</td>
+                <td>Hall B</td>
+                <td>Dr. Ahmad</td>
+            </tr>
+
+            <tr>
+                <td>4:30 PM -5:00 PM</td>
+                <td>Closing Ceremony</td>
+                <td>Hall A</td>
+                <td>Dr. Kamil</td>
+            </tr>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- 5. Registration Section: Student registration form -->
+    <section id="register">
+        <h2>Student Registration Form</h2>
+
+        <form action="register.html" method="post">
+
+            <!-- Full Name input -->
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname"
+                   name="fullname" required>
+            <br><br>
+
+            <!-- Matric Number input -->
+            <label for="matric">Matric Number:</label>
+            <input type="text" id="matric"
+                   name="matric" required>
+            <br><br>
+
+            <!-- Email input -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email"
+                   name="email" required>
+            <br><br>
+
+            <!-- Year of Study: Radio buttons -->
+            <p>Year of Study:</p>
+
+            <input type="radio" id="year1"
+                   name="year" value="Year 1" required>
+            <label for="year1">Year 1</label>
+            <input type="radio" id="year2"
+                   name="year" value="Year 2">
+            <label for="year2">Year 2</label>
+
+            <input type="radio" id="year3"
+                   name="year" value="Year 3">
+            <label for="year3">Year 3</label>
+
+            <input type="radio" id="year4"
+                   name="year" value="Year 4">
+            <label for="year4">Year 4</label>
+
+            <br><br>
+
+            <!-- Session selection: Checkboxes -->
+            <p>Sessions You Want to Join:</p>
+
+            <input type="checkbox" id="session1"
+                   name="sessions" value="Programming Talk">
+            <label for="session1">Programming Talk</label>
+            <br>
+
+            <input type="checkbox" id="session2"
+                   name="sessions" value="HTML Workshop">
+            <label for="session2">HTML Workshop</label>
+            <br>
+
+            <input type="checkbox" id="session3"
+                   name="sessions" value="Java Workshop">
+            <label for="session3">Java Workshop</label>
+            <br>
+
+            <input type="checkbox" id="session4"
+                   name="sessions" value="Coding Challenge">
+            <label for="session4">Coding Challenge</label>
+
+            <br><br>
+
+            <!-- Programme selection: Dropdown list -->
+            <label for="programme">Programme:</label>
+
+            <select id="programme" name="programme" required>
+                <option value="">-- Select Programme --</option>
+                <option value="Computer Science">
+                    Computer Science
+                </option>
+                <option value="Information Technology">
+                    Information Technology
+                </option>
+                <option value="Software Engineering">
+                    Software Engineering
+                </option>
+                <option value="Data Science">
+                    Data Science
+                </option>
+            </select>
+
+            <br><br>
+
+            <!-- Submit button -->
+            <input type="submit" value="Register">
+
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- 6. Footer: Organiser name and copyright -->
+    <footer>
+        <p>Organised by: Faculty of Computer Science</p>
+        <p>&copy; 2026 Faculty Event Committee. All rights reserved.</p>
+    </footer>
+
+</body>
+</html
+
+    
