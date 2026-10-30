@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Personal Profile Page</title>
+    </head>
+    <body><style>
+    body { 
+        font-family: Arial, sans-serif; 
+        margin: 20px; 
+        line-height: 1.6; 
+    }
+    
+    /* TETAPAN KHAS UNTUK JADUAL SAHAJA: 
+       Hanya elemen table, th (tajuk sel), dan td (sel data) sahaja yang diberi garisan kotak (border) */
+    table, th, td { 
+        border: 1px solid black; 
+        border-collapse: collapse; 
+        padding: 8px; 
+    }
+    th { 
+        background-color: #f2f2f2; 
+    }
+    
+    .form-group { 
+        margin-bottom: 10px; 
+    }
+</style>
+
+        <!----Header-->
+        <header>
+            <h1>My Profile</h1>
+            <p>Selamat Datang Ke Halaman Profil Ringkas Saya</p>
+        </header>
+
+        <!---navigation-->
+        <nav>
+            <a href="profil">Profil</a>
+            <a href="#borang">Hubungi/Borang</a>
+        </nav>
+
+        <!--Section & Article-->
+        <section id="profil">
+            <article>
+                <h2>Maklumat Peribadi</h2>
+                <p>Berkut adalah jadual yang memaparkan maklumat peribadi Saya</p>
+
+                <!--jadual dalam table-->
+                <table>
+                    <tr>
+                        <th>Perkara</th>
+                        <th>Butiran</th>
+                        <th>Keterangan Tambahan</th>
+                    </tr>
+                    <tr>
+                        <td>Nama</td>
+                        <td>Siti Saliza binti Saidi</td>
+                        <td>Belajar di Universiti Malaysia Terengganu </td>   
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td>21 Tahun</td>
+                        <td>Tahun Pengajian Kedua dan berada di Sem 3</td>
+                    </tr>
+                    <tr>
+                        <td>Pekerjaan</td>
+                        <td>Web Developer</td>
+                        <td>Mempelajari HTML & CSS</td>
+                    </tr>
+                </table>
+            </article>    
+        </section>
+
+        <section id="borang">
+            <article>
+                <h2>Borang Maklum Balas/ Pengguna</h2>
+
+                <!--Borang ringkas(simple form)-->
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="nama">Nama Penuh:</label>
+                        <input type="text" id="nama" nama="nama" required>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="email">E-mel:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Jantina:</label>
+                    <input type="radio" id="lelaki" name="jantina" value="Lelaki">
+                    <label for="lelaki" style="display:inline; font-weight:normal;">Lelaki</label>
+                    
+                    <input type="radio" id="perempuan" name="jantina" value="Perempuan" style="margin-left: 15px;">
+                    <label for="perempuan" style="display:inline; font-weight:normal;">Perempuan</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Hobi Kegemaran:</label>
+                    <input type="checkbox" id="hobi1" name="hobi" value menonton movie>
+                    <label for="hobi1" style="display:inline; font-weight:normal;">Menonton Movie</label>
+                    
+                    <input type="checkbox" id="hobi2" name="hobi" value="Tidur" style="margin-left: 15px;">
+                    <label for="hobi2" style="display:inline; font-weight:normal;">Tidur</label>
+
+                    <input type="checkbox" id="hobi3" name="hobi" value="Bermain badminton" style="margin-left: 15px;">
+                    <label for="hobi3" style="display:inline; font-weight:normal;">Bermain badminton</label>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" style="padding: 10px 20px; background-color: #0066cc; color: white; border: none; border-radius: 4px; cursor: pointer;">Hantar</button>
+                </div>
+            </form>
+        </article>
+    </section>
+
+    <!--Footer -->
+    <footer>
+        <p>&copy; 2026 Profil Peribadi. Hak cipta terpelihara.</p>
+    </footer>
+
+</body>
+</html>
+                
+            
+        
+    
