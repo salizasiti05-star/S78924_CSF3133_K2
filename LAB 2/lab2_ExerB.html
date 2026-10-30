@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+</head>
+<body>
+
+<!-- 
+PART 1: ERROR IDENTIFICATION & CORRECTIONS LIST
+
+1. Error 1 (Line 10): Incorrect closing tag </head> inside the header element.
+   - Fix: Changed </head> to </header>.
+
+2. Error 2 (Line 20): Table header cell used <td>Rating</td> instead of a header cell <th>Rating</th>.
+   - Fix: Changed <td> to <th>.
+
+3. Error 3 (Line 22): Unclosed <tr> tag from Row 1 before starting Row 2 on line 26.
+   - Fix: Added a closing </tr> tag after line 25.
+
+4. Error 4 (Line 28): Row 2 had `colspan="3"` on the topic cell, disrupting the table's 3-column structure.
+   - Fix: Adjusted/removed inappropriate colspan to fit 3 columns correctly.
+
+5. Error 5 (Line 32): Missing closing tag </td> after "Semantic HTML" (`<td>Semantic HTML<td>4.0</td>`).
+   - Fix: Added closing </td> tag after "Semantic HTML".
+
+6. Error 6 (Line 39-40): Label `for="name"` did not match the input's `id="fullname"`.
+   - Fix: Updated the input's id to `id="name"` to match the label.
+
+7. Error 7 (Line 42 & 44): Radio buttons had separate name attributes (`name="good"` and `name="poor"`), allowing both to be selected.
+   - Fix: Grouped them under the same attribute `name="rating"`.
+
+8. Error 8 (Line 46-47): Label `for="labs"` did not match the checkbox `id="lab"`.
+   - Fix: Updated the label's `for` attribute to `for="lab"`.
+
+9. Error 9 (Line 49): Typo in the closing form tag `</from>`.
+   - Fix: Corrected to `</form>`.
+
+10. Error 10 (Line 52): Missing semicolon in the copyright HTML entity `&copy`.
+    - Fix: Corrected to `&copy;`.
+-->
+
+    <!-- Header Section -->
+    <header>
+        <h1>CSF3133 Course Feedback</h1>
+    </header>
+
+    <!-- Navigation Bar: Updated with link to the new Comments section (Part 2) -->
+    <nav>
+        <a href="#results">Results</a> | 
+        <a href="#form">Feedback Form</a> | 
+        <a href="#comments">Student Comments</a>
+    </nav>
+
+    <!-- Results Section: Extended with Week 4, Week 5, and Average Rating (Part 2) -->
+    <section id="results">
+        <h2>Feedback Summary</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Rating</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Introduction to HTML</td>
+                    <td>4.5</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Tables and Forms</td>
+                    <td>4.2</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Semantic HTML</td>
+                    <td>4.0</td>
+                </tr>
+                <!-- Extension: Week 4 & Week 5 using rowspan="2" for "Mini Project" -->
+                <tr>
+                    <td>4</td>
+                    <td rowspan="2">Mini Project</td>
+                    <td>4.8</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>4.6</td>
+                </tr>
+                <!-- Extension: Average Rating row using colspan="2" -->
+                <tr>
+                    <td colspan="2"><strong>Average Rating</strong></td>
+                    <td><strong>4.42</strong></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Feedback Form Section: Extended with E-mail, Section drop-down, "Average" radio, and checkboxes (Part 2) -->
+    <section id="form">
+        <h2>Give Your Feedback</h2>
+        <form action="submit_feedback.php" method="post">
+            
+            <!-- Name Input (Fixed matching for/id) -->
+            <p>
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name">
+            </p>
+
+            <!-- Extension: E-mail input with matching label -->
+            <p>
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email">
+            </p>
+
+            <!-- Extension: Section/Group drop-down list (<select>) -->
+            <p>
+                <label for="section">Section/Group:</label><br>
+                <select id="section" name="section">
+                    <option value="">-- Select Section --</option>
+                    <option value="s1">Section 01</option>
+                    <option value="s2">Section 02</option>
+                    <option value="s3">Section 03</option>
+                </select>
+            </p>
+
+            <!-- Overall Rating Radio Group (Fixed + Extended with "Average") -->
+            <p>
+                <label>Overall rating:</label><br>
+                <input type="radio" id="good" name="rating" value="good">
+                <label for="good">Good</label>
+
+                <input type="radio" id="average" name="rating" value="average">
+                <label for="average">Average</label>
+
+                <input type="radio" id="poor" name="rating" value="poor">
+                <label for="poor">Poor</label>
+            </p>
+
+            <!-- Extension: Checkboxes for "Topics I want more practice on" -->
+            <p>
+                <label>Topics I want more practice on:</label><br>
+                <input type="checkbox" id="topic_tables" name="practice[]" value="tables">
+                <label for="topic_tables">Tables (colspan/rowspan)</label><br>
+
+                <input type="checkbox" id="topic_forms" name="practice[]" value="forms">
+                <label for="topic_forms">Forms & Inputs</label><br>
+
+                <input type="checkbox" id="topic_semantic" name="practice[]" value="semantic">
+                <label for="topic_semantic">Semantic HTML Tags</label>
+            </p>
+
+            <!-- Lab Attendance Checkbox (Fixed matching for/id) -->
+            <p>
+                <input type="checkbox" id="lab" name="lab" value="yes">
+                <label for="lab">I attended all labs</label>
+            </p>
+
+            <!-- Submit Button -->
+            <p>
+                <input type="submit" value="Submit">
+            </p>
+
+        </form>
+    </section>
+
+    <!-- Semantic HTML Section: Student Comments containing two article elements (Part 2) -->
+    <section id="comments">
+        <h2>Student Comments</h2>
+        
+        <article>
+            <h3>Nur Jannah</h3>
+            <p>The practical lab activities helped me master how table rows and cell spanning work in HTML.</p>
+        </article>
+
+        <article>
+            <h3>Nik Iqbal</h3>
+            <p>Learning how to structure forms and semantic tags properly makes web development much cleaner and easier to read.</p>
+        </article>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Copyright &copy; 2026 CSF3133</p>
+    </footer>
+
+</body>
+</html>
