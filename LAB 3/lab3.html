@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!----Document Information HTML-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Contact Form With An Inline Calculator </title>
+    </head>
+    <body>
+        <!---header section-->
+        <div>
+            <h1>Contact Form :<span><br>Slogan: Servis Mesra & Pantas</span> </h1>
+        </div>
+
+        <!---Content Section-->
+        <div>
+            <h2>Contact Form</h2>
+            <form action="#">
+                <!---Email Input-->
+                <label for="email">Emel:</label><br>
+                <input type="email" id="email" name="email" required></br>
+           
+                <!--Date Input-->
+                <label for="date">Preferred Contact Date:</label><br>
+                <input type="date id=date" name="date"><br>
+
+                <!---Range Slider-->
+                <label for="satisfaction">Level of satisfation(1 until 10):</label><br>
+                <input type="range" id="Satisfaction" name="Satisfaction"><br>
+
+                <!--Submit Button-->
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <br><hr><br>
+
+        <!----Inline Calculator-->
+        <div>
+            <h2>Inline Calculator</h2>
+            <form oninput="total.value =parseInt(num1.value || 0) + parseInt(num2.value || 0) ">
+                <input type="number" id="num1" placeholder="Number 1"> +
+                <input type="number" id="num2" placeholder="Number 2"> =
+                <output name="total" for="num1 num2">0</output>
+            </form>
+        </div>
+    </div>
+
+    <br><hr>
+
+    <!----Footer section-->
+    <div>
+        <p>&copy; 2026 Hak Cipta Terpelihara. Hubungi kami di: servisMesra@gmail.com</p>
+    </div>
+    </body>
+</html>
