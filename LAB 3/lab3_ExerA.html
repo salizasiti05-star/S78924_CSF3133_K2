@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!---document HTML-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale-1.0">
+        <title>Campus Bakery online Order Page</title>
+    </head>
+    <body>
+        <!---Header section-->
+        <div id="header">
+            <h1>Sweet Bakery</h1>
+            <span>Happiness Starts with a Bite</span>
+        </div>
+
+        <!---Navigation-->
+        <div id="nav">
+        <nav>
+            <a href="#header">Home</a> |
+            <a href="#content">Order</a> |
+            <a href="#sidebar">Price List</a> |
+            <a href="#footer">Contact</a>
+        </div>
+        </nav>
+         <!----Content Section 3,5,6 -->
+         <div id="content">
+            <h2>Order Form</h2>
+            <p>Sila buat pesanan anda atau rujuk <a href="#sidebar">Senarai Harga</a>.<em>Cepat</em> dan <span>Lazat</span>!</p>
+         
+            <form action="order.php" oninput="price.value = (Number(cupcakes.value) * 3) + (Number(slices.value) * 5)">
+            <!-- Maklumat Peribadi -->
+            <label>Name:</label><br>
+            <input type="text" name="name" placeholder="Nama penuh" required autofocus><br><br>
+
+            <label>Phone:</label><br>
+            <input type="tel" name="phone" required><br><br>
+
+            <label>E-mail:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <!-- Tarikh & Masa -->
+            <label>Date:</label><br>
+            <input type="date" name="date"><br><br>
+
+            <label>Time:</label><br>
+            <input type="time" name="time"><br><br>
+
+            <!-- Datalist Perisa -->
+            <label>Flavour:</label><br>
+            <input type="text" name="flavour" list="flavours">
+            <datalist id="flavours">
+                <option value="Peanut Butter Chocolate">
+                <option value="Mango Cheesecake">
+                <option value="Carrot Cake">
+                <option value="Red Velvet">
+                <option value="Pandan Gula Melaka">
+                <option value="Tiramisu">
+                </option>
+                
+            </datalist><br><br>
+
+            <!-- Warna & Slider Kemanisan -->
+            <label>Icing Colour:</label><br>
+            <input type="color" name="icing"><br><br>
+
+            <label>Sweetness (1-5):</label><br>
+            <input type="range" name="sweetness" min="1" max="5" step="1"><br><br>
+
+           
+            <!-- Kalkulator Harga -->
+            <h3>Calculator</h3>
+            <label>Cupcakes (RM3):</label><br>
+            <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br><br>
+
+            <label>Slices (RM5):</label><br>
+            <input type="number" id="slices" name="slices" min="0" value="0"><br><br>
+
+            <p>Total: RM <output name="price" for="cupcakes slices">0</output></p>
+            <p><small>Orders &gt; 10 get free drink!</small></p>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <!-- 4. Sidebar (Price List) -->
+    <div id="sidebar">
+        <h3>Price List</h3>
+        <ul>
+            <li>Cupcake - RM 3</li>
+            <li>Slice - RM 5</li>
+        </ul>
+    </div>
+
+    <!-- 4. Footer -->
+    <div id="footer">
+        <p>&copy; 2026 Sweet Bakery&reg; &nbsp;|&nbsp; No &euro;</p>
+    </div>
+
+</body>
+</html>
+        
+        
+    
+
