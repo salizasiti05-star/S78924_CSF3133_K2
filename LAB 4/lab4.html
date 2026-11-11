@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device=width, initial=scale=1.0">
+        <title>Lab Exercise 4</title>
+
+        <!--menghubungkan fail CSS luaran-->
+        <link rel="stylesheet" href="lab4.css">
+
+        <!-- Internal CSS (seperti yang diminta dalam arahan untuk menggunakan kedua-dua internal & external CSS) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation Bar -->
+    <header>
+        <h1>Laman Web Interaktif Lab 4</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Utama</a></li>
+                <li><a href="#about">Mengenai</a></li>
+                <li><a href="#media">Media</a></li>
+                <li><a href="#contact">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section id="home">
+        <article>
+            <h2>Pengenalan kepada HTML5 & CSS</h2>
+            <p>Laman web ini dibina khas untuk memenuhi keperluan Lab Exercise 4 dengan mengintegrasikan elemen semantik dan reka bentuk responsif.</p>
+            
+        </article>
+    </section>
+
+    <!-- Media Section (Embedded Video) -->
+    <section id="media">
+        <h2>Bahagian Media</h2>
+        <p>Tonton video di bawah untuk maklumat lanjut:</p>
+        <iframe 
+        width="560" height="315" src="https://www.youtube.com/embed/wriGST3vp5M?si=zLUa7IXA56kmQizo" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    </section>                                                                                                      
+
+    <!-- Interactive Elements Section (Form) -->
+    <section id="contact">
+        <h2>Borang Maklum Balas</h2>
+        <form action="#" method="POST">
+            <!-- Name (Text Input) -->
+            <label for="name">Nama:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email (Text Input) -->
+            <label for="email">E-mel:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Gender (Radio Buttons) -->
+            <label>Jantina:</label><br>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Lelaki</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Perempuan</label><br><br>
+
+            <!-- Favorite Hobbies (Checkboxes) -->
+            <label>Hobi Kegemaran:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+            <label for="hobby1">Membaca</label>
+            <input type="checkbox" id="hobby2" name="hobbies" value="Coding">
+            <label for="hobby2">Pengaturcaraan</label>
+            <input type="checkbox" id="hobby3" name="hobbies" value="Gaming">
+            <label for="hobby3">Permainan Video</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Hantar">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lab Exercise 4. Hak Cipta Terpelihara.</p>
+    </footer>
+
+</body>
+</html>
+    </head>
+</html>
