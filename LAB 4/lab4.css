@@ -1,0 +1,88 @@
+/* Menggayakan Header dan Navigation Bar */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Hiasan Teks dan States untuk Pautan (Links) */
+nav ul li a {
+    color: #fff;
+    text-decoration: underline; /* Menggunakan text-decoration seperti arahan */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+/* CSS States untuk Links (:hover, :visited, :active) */
+nav ul li a:visited {
+    color: #b0c4de;
+}
+
+nav ul li a:hover {
+    color: #ff4500;
+    text-decoration: overline;
+}
+
+nav ul li a:active {
+    color: #32cd32;
+    text-decoration: line-through;
+}
+
+/* Menggayakan Seksyen Kandungan */
+section {
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Menggayakan Borang (Form Styling) */
+form {
+    max-width: 400px;
+    background: #fafafa;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
