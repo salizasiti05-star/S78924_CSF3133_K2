@@ -1,0 +1,60 @@
+/* Navigation Bar Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #be7999;
+}
+
+nav li a {
+    display: block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav li a:hover {
+    background-color: #8475c5;
+    color: #f1e6e6;
+}
+
+/* General Styles & Fixes */
+a:link { color: #1A5276; }
+a:hover { color: #E67E22; }
+a:visited { color: #7D3C98; }
+a:active { color: #C0392B; }
+
+h1 { text-decoration: overline; }
+p { color: #333333; text-align: justify; }
+
+#intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #C0392B;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #999999;
+    margin-right: 8px;
+}
+
+/* Responsive Video Style */
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Feedback Form Style */
+.feedback-form {
+    background-color: #bd8e9e;
+    padding: 20px;
+    border: 1px solid #252525;
+    border-radius: 5px;
+    max-width: 500px;
+}
