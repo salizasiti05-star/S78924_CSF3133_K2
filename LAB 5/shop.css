@@ -1,0 +1,104 @@
+/* General Page Styling & Background Image */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("paper.gif");
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Banner Styling (Part 2 - Step 5 & 8) */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url("paper.gif");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+header h1 {
+  font-family: 'Merriweather', serif;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/* Navigation Bar Styling (Part 1 & Part 2 - Step 6) */
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+nav li a.active {
+  background-color: #04AA6D;
+}
+
+/* Main Content & Paragraph Styling (Part 2 - Step 5 & 8) */
+main {
+  padding: 20px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Products Table Styling (Part 1 & Part 2 - Step 7) */
+#products {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#products td, #products th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#products tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#products tr:hover {
+  background-color: #ddd;
+}
+
+#products th {
+  background-color: #04AA6D;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#products .price-col {
+  text-align: right;
+}
+
+/* Footer Styling (Part 2 - Step 9) */
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 14px;
+  margin-top: 20px;
+  color: #333;
+}
