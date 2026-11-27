@@ -1,0 +1,131 @@
+/* Page & Container Setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F4F4F4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 760px;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+}
+
+/* Top Banner */
+.banner {
+    background-color: #1F6FB2;
+    padding: 30px;
+    text-align: center;
+}
+
+.banner h1 {
+    color: #FFFFFF;
+    font-size: 32px;
+    margin: 0;
+}
+
+/* Navigation Menu */
+.menu {
+    background-color: #EEEEEE;
+    padding: 15px;
+    border-bottom: 2px solid #333333;
+}
+
+.menu a {
+    color: #333333;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* Main Content Area */
+.content {
+    padding: 20px;
+}
+
+.welcome-section h2 {
+    font-size: 24px;
+    color: #333333;
+    border-bottom: 1px dashed #333333;
+    padding-bottom: 5px;
+}
+
+.welcome-section img {
+    width: 300px;
+    height: 200px;
+    border: 3px solid #333333;
+    padding: 5px;
+    display: block;
+    margin: 15px 0;
+}
+
+.welcome-section p {
+    font-size: 16px;
+    color: #555555;
+}
+
+/* Enquiry Form */
+.form-section {
+    border-top: 2px solid #999999;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+.form-section h3 {
+    font-size: 20px;
+    color: #333333;
+}
+
+.form-section form {
+    width: 500px;
+    border: 2px solid #333333;
+    padding: 20px;
+    background-color: #FFFFFF;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    font-size: 14px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    width: 300px;
+    height: 36px;
+    padding: 8px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    width: 300px;
+    height: 80px;
+    padding: 8px;
+    border: 1px solid #999999;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #FFFFFF;
+    border: 2px solid #333333;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* Footer */
+.footer {
+    border-top: 2px solid #333333;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #333333;
+}
