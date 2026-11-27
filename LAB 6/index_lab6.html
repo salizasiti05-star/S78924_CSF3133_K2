@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Quiz Application</title>
+    <link rel="stylesheet" href="style_lab.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <header>
+            <h1>Web Development Quiz</h1>
+            <p>Test your HTML, CSS, and JavaScript knowledge!</p>
+        </header>
+
+        <main>
+            <!-- Bahagian Soalan, Pilihan & Pemasa -->
+            <section id="quiz-section">
+                <div class="quiz-header-info">
+                    <span id="question-number">Question 1 of 5</span>
+                    <div id="timer">Time Left: <span id="time-left">15</span>s</div>
+                </div>
+
+                <h2 id="question-text">Question will appear here</h2>
+                <div id="options-container" class="options-grid"></div>
+            </section>
+
+            <!-- Bahagian Maklum Balas Masa Nyata -->
+            <section id="feedback-section" class="hidden">
+                <p id="feedback-text"></p>
+            </section>
+
+            <!-- Butang Kawalan -->
+            <section class="controls">
+                <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+                <button id="next-btn" class="hidden" onclick="nextQuestion()">Next Question</button>
+                <button id="restart-btn" class="hidden" onclick="startQuiz()">Restart Quiz</button>
+            </section>
+        </main>
+
+        <!-- Footer untuk memaparkan skor akhir -->
+        <footer>
+            <p id="score-display">Current Score: 0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
