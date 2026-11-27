@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Grade Calculator</title>
+    <!-- Langkah 9: Pautkan fail style.css -->
+    <link rel="stylesheet" href="style_lab6B.css">
+</head>
+<body>
+    <h2>Student Grade Calculator</h2>
+    <!-- Betulkan Error 1: Tambah 'return' supaya halaman tidak refresh -->
+    <form name="gradeForm" id="gradeForm" onsubmit="return checkMark()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="mark">Mark (0-100):</label>
+        <input type="text" id="mark" name="mark"><br>
+
+        <button type="submit">Check Grade</button>
+        <!-- Langkah 7: Tambah butang Random Mark (type="button" supaya tidak submit form) -->
+        <button type="button" onclick="generateRandomMark()">Random Mark</button>
+    </form>
+    <buttom type="button" onlick="showTable()">Show Grade Table</buttom>
+
+    <p id="result"></p>
+    <!-- Langkah 8: Elemen untuk memaparkan tarikh dan masa semakan -->
+    <p id="dateTime"></p>
+    <div id="tableContainer"></div>
+
+    <!-- Betulkan Error 2: Tukar showtable() kepada showTable() -->
+    <button type="button" onclick="showTable()">Show Grade Table</button>
+
+    <!-- Betulkan Error 3: Tukar grades.js kepada grade.js -->
+    <script src="grade.js"></script>
+</body>
+</html>

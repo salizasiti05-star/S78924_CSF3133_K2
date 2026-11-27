@@ -1,0 +1,92 @@
+/* Langkah 9: Penggayaan halaman, borang, butang, dan jadual gred */
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px 35px;
+    background-color: #f9f9f9;
+    color:beige;
+}
+/* Tajuk utama */
+h2 {
+    color: #1f5c99;
+    front-size: 22px;
+    margin-bottom: 18px;
+}
+/*kotak borang berbingkai */
+form {
+    background-color: #2db46a;
+    padding: 20px;
+    border: 1px solid #1f1d1d;
+    border-radius: 5px;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    front-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    front-size: 14px;
+}
+/* butang check grade, random mark & show grade  table */
+button {
+    background-color: #2b78c5;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    margin-right: 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* Kesan hover pada butang */
+button:hover {
+    background-color: #1a528a;
+}
+
+/* Teks keputusan dan tarikh/masa */
+#result {
+    margin: 10px 0 2px 0;
+    font-size: 15px;
+}
+
+#dateTime {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+}
+
+/* Jadual gred */
+table {
+    width: 100%;
+    max-width: 420px;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #1f4e78;
+    color: #ffffff;
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    text-align: center;
+}
+
+td {
+    color: #59606e; /* Warna teks gelap supaya jelas dibaca */
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #cbd5e1; /* Garis kotak jelas untuk setiap sel */
+    text-align: center;
+}
