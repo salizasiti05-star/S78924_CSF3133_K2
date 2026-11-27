@@ -1,0 +1,104 @@
+/* Kotak banner / header pada tajuk */
+header {
+  background-color: transparent; /* Buang latar belakang kotak pada keseluruhan header */
+  color: #e6e9ee;
+  padding: 0;
+  border-radius: 0;
+}
+
+header h1 {
+  background-color: #4a1533; /* Kotak hanya pada tajuk besar */
+  color: #ece5e5;
+  padding: 18px 22px;
+  border-radius: 8px;
+  margin: 0 0 12px 0;
+}
+
+header p {
+  margin: 0;
+  color: #1a1b1b; /* teks arahan di luar kotak */
+}
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  max-width: 750px;
+  margin: 30px auto;
+  padding: 0 20px;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+header, section, footer {
+  margin-bottom: 24px;
+}
+
+/* Button styling and hover effect */
+button {
+  padding: 10px 18px;
+  margin: 5px;
+  font-size: 15px;
+  background-color: #4e0a4b;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1d4ed8;
+}
+
+input[type="text"] {
+  padding: 9px 12px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Fixed image size for player and computer choices */
+.arena {
+  display: flex;
+  gap: 40px;
+  margin-top: 15px;
+}
+
+.arena img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 8px;
+  background-color: #ffffff;
+}
+
+/* History table styling */
+#history {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+#history th,
+#history td {
+  border: 1px solid #cbd5e1;
+  padding: 10px;
+  text-align: center;
+}
+
+#history th {
+  background-color: #e2e8f0;
+  color: #0f172a;
+}
+
+#result {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer {
+  border-top: 1px solid #416fc9;
+  padding-top: 12px;
+  font-size: 14px;
+  color: #052653;
+}
